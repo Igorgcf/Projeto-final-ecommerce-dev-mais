@@ -69,8 +69,75 @@ Regras compostas: combinação de múltiplos descontos
 
 Promoção automática: se o pedido possuir 5 ou mais produtos, o item mais barato é gratuito (100% de desconto apenas nesse produto)
 
+⚙️ Execução do Projeto
+Pré-requisitos
+
+Java 17+ instalado
+IDE como IntelliJ IDEA, Eclipse ou VS Code (com extensão Java)
+Nenhuma dependência externa é necessária
+
+Passos:
+1. Clone este repositório:
+```bash
+git clone https://github.com/Igorgcf/Projeto-final-ecommerce-dev-mais.git
+```
+2. Compile o projeto (Manualmente opcional sem IDE):
+```bash
+javac src/**/*.java
+```
+3. Execute o programa:
+```bash
+java -cp src Main
+```
+
+💾 Persistência em Arquivos
+
+Os dados são salvos em arquivos .dat dentro da pasta ada-commerce-data/, por exemplo:
+ada-commerce-data/
+
+ ├── clients.dat
+ 
+ ├── products.dat
+ 
+ ├── orders.dat
+ 
+ └── coupons.dat
+
+⚠️ Esses arquivos armazenam objetos Java serializados.
+Eles não são legíveis manualmente, mas mantêm o histórico das operações realizadas.
+
+🧵 Threads de Pagamento
+
+A simulação de pagamento é feita de forma não bloqueante, utilizando Thread ou ExecutorService.
+Durante o processamento, o menu permanece acessível e o sistema exibe:
+```nginx
+Seu pagamento está sendo processado...
+
+Pagamento aprovado com sucesso!
+Pedido #1 agora está com status: PAGO
+```
+
+📘 Conceitos Acadêmicos Aplicados
+
+Encapsulamento – classes bem definidas e atributos privados
+
+Polimorfismo – comportamento diferenciado para descontos simples e compostos
+
+Herança e Composição – entre entidades e serviços
+
+Programação Funcional – uso de Lambdas e Streams
+
+Concorrência – processamento de pagamento com Threads
+
+Boas práticas SOLID – responsabilidade única e baixo acoplamento
+
+🏆 Créditos
+
+Projeto desenvolvido por Igor Gonçalves de Freitas 💡
+Como parte de estudo avançado em Java, POO, Programação Funcional e Princípios SOLID, aplicados a um cenário real de E-Commerce.
 
 🧠 Tecnologias e Conceitos Utilizados
+
 | Categoria                     | Descrição                                                                  |
 | ----------------------------- | -------------------------------------------------------------------------- |
 | **Linguagem**                 | Java 17+                                                                   |
@@ -141,5 +208,7 @@ src/
  │    └── CouponUI.java
  
  └── Main.java
+
+Nenhuma dependência externa é necessária
  
 ![image](https://img.freepik.com/premium-photo/wildlife-tracks-document-animal-tracks-snow-inviting-viewers-guess-what-wildlife-might-be-nearby_997534-75869.jpg?semt=ais_hybrid&w=740&q=80)
