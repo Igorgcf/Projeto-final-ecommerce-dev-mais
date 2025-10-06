@@ -130,7 +130,7 @@ src/
  
  │
  
- ├── ui/
+ ├── interfaces/
  
  │    ├── ClientUI.java
  
