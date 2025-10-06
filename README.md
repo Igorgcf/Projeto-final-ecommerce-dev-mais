@@ -50,7 +50,7 @@ Simula tempo de aprovação e notificação automática do cliente
 
 🎟️ Cupons de Desconto
 
-Criar, listar, atualizar e expirar cupons de desconto
+Criar, listar, e expirar cupons de desconto
 
 Aplicar cupons a pedidos com validação automática:
 
